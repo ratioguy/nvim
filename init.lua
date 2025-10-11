@@ -1,6 +1,6 @@
 -- Neovim config
 
--- Install vim-plug
+-- Install vim-plug on nvim start, if not already installed
 local data_dir = vim.fn.stdpath('data')
 if vim.fn.empty(vim.fn.glob(data_dir .. '/site/autoload/plug.vim')) == 1 then
 	vim.cmd('silent !curl -fLo ' .. data_dir .. '/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
@@ -8,7 +8,7 @@ if vim.fn.empty(vim.fn.glob(data_dir .. '/site/autoload/plug.vim')) == 1 then
 	vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
 end
 
--- Define stuff
+-- Define functions
 local vim = vim
 local Plug = vim.fn['plug#']
 
