@@ -22,7 +22,6 @@ Plug('lukas-reineke/indent-blankline.nvim')
 Plug('lewis6991/gitsigns.nvim')
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('preservim/nerdtree')
-Plug('junegunn/fzf.vim')
 
 vim.call('plug#end')
 
