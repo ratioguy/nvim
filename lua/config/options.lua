@@ -25,3 +25,6 @@ vim.o.numberwidth = 1
 vim.cmd('set relativenumber')
 vim.cmd('au InsertEnter,CmdLineEnter * set norelativenumber | redraw')
 vim.cmd('au InsertLeave,CmdlineLeave * set relativenumber')
+
+-- Make backspace backspace
+vim.cmd('set backspace=indent,eol,start')
