@@ -9,6 +9,3 @@ map("i", "<C-k>", "<Up>", { desc = "move up" })
 
 -- Bind nerdtree to Ctrl + p
 map("n", "<C-p>", "<cmd>NERDTreeToggle<CR>", { desc = "Toggle nerdtree window" })
-
--- Map nohlsearch
-map("n", "?", "<cmd>nohlsearch<CR>", { desc = "execute nohlsearch" })
