@@ -20,14 +20,12 @@ Plug('lukas-reineke/indent-blankline.nvim')
 Plug('lewis6991/gitsigns.nvim')
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('preservim/nerdtree')
-Plug('nvim-treesitter/nvim-treesitter')
 
 vim.call('plug#end')
 
 -- Require plugin configs
 require('config.mappings')
 require('config.options')
-require('plugins.treesitter')
 require('plugins.indent-blankline')
 require('plugins.gitsigns')
 require('plugins.render-markdown')
