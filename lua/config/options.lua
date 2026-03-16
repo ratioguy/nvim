@@ -4,6 +4,9 @@
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
+-- Disable swapfile
+vim.o.swapfile = false 
+
 -- Make mouse copy from terminal
 vim.o.mouse = "c"
 
@@ -26,5 +29,5 @@ vim.cmd('set relativenumber')
 vim.cmd('au InsertEnter,CmdLineEnter * set norelativenumber | redraw')
 vim.cmd('au InsertLeave,CmdlineLeave * set relativenumber')
 
--- Make backspace backspace
+-- Make the backspace key backspace
 vim.opt.backspace = {'indent', 'eol', 'start'}
