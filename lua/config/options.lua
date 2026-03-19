@@ -31,8 +31,3 @@ vim.cmd('au InsertLeave,CmdlineLeave * set relativenumber')
 
 -- Make the backspace key backspace
 vim.opt.backspace = {'indent', 'eol', 'start'}
-
-
--- Disable Netrw
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1

@@ -8,4 +8,4 @@ map("i", "<C-j>", "<Down>", { desc = "move down" })
 map("i", "<C-k>", "<Up>", { desc = "move up" })
 
 -- Bind nerdtree to Ctrl + p
-map("n", "<C-p>", "<cmd>NERDTreeToggle<CR>", { desc = "Toggle nerdtree window" })
+map("n", "<C-p>", "<cmd>FzfLua files<CR>", { desc = "Toggle nerdtree window" })
