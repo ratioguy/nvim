@@ -2,7 +2,8 @@
 
 -- Set colourscheme to gruvbox dark
 vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd("colorscheme gruvbox")
+vim.cmd("hi SignColumn guibg=none")
 
 -- Disable swapfile
 vim.o.swapfile = false 
