@@ -1,26 +1,12 @@
 -- Neovim config
 
--- Install vim-plug on nvim start, if not already installed
-local data_dir = vim.fn.stdpath('data')
-if vim.fn.empty(vim.fn.glob(data_dir .. '/site/autoload/plug.vim')) == 1 then
-	vim.cmd('silent !curl -fLo ' .. data_dir .. '/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
-	vim.o.runtimepath = vim.o.runtimepath
-	vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
-end
-
--- Define functions
-local vim = vim
-local Plug = vim.fn['plug#']
-
 -- Plugins
-vim.call('plug#begin')
-
-Plug('ellisonleao/gruvbox.nvim')
-Plug('lukas-reineke/indent-blankline.nvim')
-Plug('lewis6991/gitsigns.nvim')
-Plug('ibhagwan/fzf-lua')
-
-vim.call('plug#end')
+vim.pack.add({
+	'https://github.com/ellisonleao/gruvbox.nvim',
+	'https://github.com/lukas-reineke/indent-blankline.nvim',
+	'https://github.com/lewis6991/gitsigns.nvim',
+	'https://github.com/ibhagwan/fzf-lua',
+})
 
 -- Require plugin configs
 require('config.mappings')

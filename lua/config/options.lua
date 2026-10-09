@@ -12,9 +12,6 @@ vim.o.swapfile = false
 -- Make mouse copy from terminal
 vim.o.mouse = "c"
 
--- Use system keyboard
-vim.o.clipboard = "unnamedplus"
-
 -- Show and highlight line number
 vim.o.number = true
 vim.o.cursorline = true
