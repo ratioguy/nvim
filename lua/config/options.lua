@@ -1,4 +1,5 @@
----- Fix background colour getting left by neovim in scrollback
+-- Show line number
+vim.cmd("se nu")
 
 -- Set colourscheme to gruvbox dark
 vim.o.background = "dark"
@@ -17,16 +18,11 @@ vim.o.number = true
 vim.o.cursorline = true
 vim.o.cursorlineopt = "number"
 
--- Case insenitive searching
+-- Case insensitive searching
 vim.o.ignorecase = true 
 
 -- Set number width
 vim.o.numberwidth = 1
 
--- Set relative number in normal mode only
-vim.cmd('set relativenumber')
-vim.cmd('au InsertEnter,CmdLineEnter * set norelativenumber | redraw')
-vim.cmd('au InsertLeave,CmdlineLeave * set relativenumber')
-
--- Make the backspace key backspace
+-- Make the backspace key work as intended 
 vim.opt.backspace = {'indent', 'eol', 'start'}
