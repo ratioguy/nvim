@@ -10,8 +10,10 @@ vim.pack.add({
 
 -- Settings
 
--- Show line number
-vim.o.number = true
+-- Set relative number in normal mode only
+vim.cmd('set relativenumber')
+vim.cmd('au InsertEnter,CmdLineEnter * set norelativenumber | redraw')
+vim.cmd('au InsertLeave,CmdlineLeave * set relativenumber')
 
 -- Set colourscheme to gruvbox dark
 vim.o.background = "dark"
