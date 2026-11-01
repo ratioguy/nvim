@@ -46,7 +46,7 @@ vim.opt.backspace = {'indent', 'eol', 'start'}
 
 -- Options
 
--- Bind nerdtree to Ctrl + p
+-- Bind FZF filebrowser to Ctrl + p
 vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<CR>", { desc = "Toggle fzf window" })
 
 -- Require plugin configs
