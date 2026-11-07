@@ -52,7 +52,7 @@ vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<CR>", { desc = "Toggle fzf windo
 -- Macros
 
 vim.cmd("let @s='ggO#!/bin/shj0'")
-vim.cmd([[let @y='V"+y']])
+vim.cmd([[let @y='"+yy']])
 vim.cmd([[let @p='"+p ']])
 vim.cmd([[let @o='"+P ']])
 
