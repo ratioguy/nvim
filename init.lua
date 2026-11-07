@@ -49,6 +49,13 @@ vim.opt.backspace = {'indent', 'eol', 'start'}
 -- Bind FZF filebrowser to Ctrl + p
 vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<CR>", { desc = "Toggle fzf window" })
 
+-- Macros
+
+vim.cmd("let @s='ggO#!/bin/shj0'")
+vim.cmd([[let @y='V"+y']])
+vim.cmd([[let @p='"+p ']])
+vim.cmd([[let @o='"+P ']])
+
 -- Require plugin configs
 require('plugins.indent-blankline')
 require('plugins.gitsigns')
