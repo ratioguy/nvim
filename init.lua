@@ -6,6 +6,9 @@ vim.pack.add({
 	'https://github.com/lukas-reineke/indent-blankline.nvim',
 	'https://github.com/lewis6991/gitsigns.nvim',
 	'https://github.com/ibhagwan/fzf-lua',
+	'https://github.com/mason-org/mason.nvim',
+	'https://github.com/mason-org/mason-lspconfig.nvim',
+	'https://github.com/neovim/nvim-lspconfig',
 })
 
 -- Settings
@@ -44,6 +47,9 @@ vim.o.numberwidth = 1
 -- Make the backspace key work as intended 
 vim.opt.backspace = {'indent', 'eol', 'start'}
 
+-- Disable auto comment
+vim.cmd("set paste")
+
 -- Options
 
 -- Bind FZF filebrowser to Ctrl + p
@@ -59,3 +65,4 @@ vim.cmd([[let @o='"+P ']])
 -- Require plugin configs
 require('plugins.indent-blankline')
 require('plugins.gitsigns')
+require('plugins.lsp')
