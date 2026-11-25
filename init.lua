@@ -66,10 +66,8 @@ vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<CR>", { desc = "Toggle fzf windo
 
 -- Macros
 
+-- Shell start of script
 vim.cmd("let @s='ggO#!/bin/shj0'")
-vim.cmd([[let @y='"+yy']])
-vim.cmd([[let @p='"+p ']])
-vim.cmd([[let @o='"+P ']])
 
 -- Require plugin configs
 require('plugins.indent-blankline')
